@@ -1,0 +1,11 @@
+Package: gantenmisc
+Title: Convenience Functions for R
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jason", "Gantenberg", , "jason.gantenberg@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8144-4273"))
+Description: "If I find myself writing the same function over and over in different scripts, there's a good chance it'll end up here."
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
