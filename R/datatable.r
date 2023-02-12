@@ -21,6 +21,7 @@ getnames <- function(pat, data) {
 #' @description
 #' Not my idea (ht eliocamp): https://github.com/Rdatatable/data.table/issues/4872
 #'
+#' @import data.table
 #' @export d
 
 d <- data.table:::"[.data.table"
