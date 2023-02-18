@@ -25,8 +25,10 @@ d(
 )
 }
 \description{
-Not my idea (ht eliocamp): https://github.com/Rdatatable/data.table/issues/4872
+An alias for the \code{[} function in \code{data.table}, for manipulating
+data tables using R's native pipe operator.
 }
 \details{
-An alias for the \code{[} function in \code{data.table}, for manipulating data tables using R's native pipe operator.
+Not my idea (see: eliocamp's comments):
+https://github.com/Rdatatable/data.table/issues/4872
 }

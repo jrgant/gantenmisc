@@ -4,12 +4,17 @@
 \alias{getnames}
 \title{Retrieve column names}
 \usage{
-getnames(pat, data)
+getnames(pat, data, ...)
 }
 \arguments{
 \item{pat}{A regular expression defining the pattern(s) used to retrieve column names.}
 
-\item{data}{A data frame from which to retrieve the column names.}
+\item{data}{A \code{data.frame} from which to retrieve the column names.}
+
+\item{...}{Pass arguments to \code{grep()}}
+}
+\value{
+A vector of column names from the selected \code{data.frame}, each matching the pattern specified in \code{pat}.
 }
 \description{
 Helper function that returns column names from a data frame based on a regular expression.
