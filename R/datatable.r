@@ -1,4 +1,4 @@
-#' Retrieve column names
+#' @title Retrieve column names
 #'
 #' @description Helper function that returns column names from a data frame based on a regular expression.
 #'
@@ -17,7 +17,7 @@ getnames <- function(pat, data, ...) {
 }
 
 
-#' Alias for data.table's `[`
+#' @title Alias for data.table's `[`
 #'
 #' @description An alias for the `[` function in `data.table`, for manipulating
 #'              data tables using R's native pipe operator.
@@ -32,7 +32,7 @@ getnames <- function(pat, data, ...) {
 d <- data.table:::"[.data.table"
 
 
-#' Convert output of expand.grid to data.table
+#' @title Convert output of expand.grid to data.table
 #'
 #' @description A wrapper around `expand.grid()` that outputs a `data.table` instead of a vanilla `data.frame`.
 #'
