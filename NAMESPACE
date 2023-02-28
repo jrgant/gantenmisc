@@ -2,5 +2,6 @@
 
 export(d)
 export(expand_grid)
+export(fbig)
 export(getnames)
 import(data.table)
