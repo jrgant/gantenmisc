@@ -19,7 +19,7 @@ getnames <- function(pat, data, ...) {
 
 #' @title Alias for data.table's `[`
 #'
-#' @description An alias for the `[` function in `data.table`, for manipulating
+#' @description Aliases for the `[` function in `data.table`, for manipulating
 #'              data tables using R's native pipe operator.
 #'
 #' @details
@@ -27,9 +27,12 @@ getnames <- function(pat, data, ...) {
 #' https://github.com/Rdatatable/data.table/issues/4872
 #'
 #' @import data.table
-#' @export d
+#' @export dt
+dt <- data.table:::"[.data.table"
 
-d <- data.table:::"[.data.table"
+#' @describeIn dt d
+#' @export d
+d  <- dt
 
 
 #' @title Convert output of expand.grid to data.table
