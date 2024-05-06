@@ -3,6 +3,7 @@
 export(author)
 export(authorlist)
 export(d)
+export(dev_asp)
 export(dt)
 export(expand_grid)
 export(fbig)
