@@ -12,7 +12,7 @@ dt(
   by,
   keyby,
   with = TRUE,
-  nomatch = getOption("datatable.nomatch", NA),
+  nomatch = NA,
   mult = "all",
   roll = FALSE,
   rollends = if (roll == "nearest") c(TRUE, TRUE) else if (roll >= 0) c(FALSE, TRUE) else
@@ -22,7 +22,8 @@ dt(
   verbose = getOption("datatable.verbose"),
   allow.cartesian = getOption("datatable.allow.cartesian"),
   drop = NULL,
-  on = NULL
+  on = NULL,
+  env = NULL
 )
 
 d(
@@ -32,7 +33,7 @@ d(
   by,
   keyby,
   with = TRUE,
-  nomatch = getOption("datatable.nomatch", NA),
+  nomatch = NA,
   mult = "all",
   roll = FALSE,
   rollends = if (roll == "nearest") c(TRUE, TRUE) else if (roll >= 0) c(FALSE, TRUE) else
@@ -42,7 +43,8 @@ d(
   verbose = getOption("datatable.verbose"),
   allow.cartesian = getOption("datatable.allow.cartesian"),
   drop = NULL,
-  on = NULL
+  on = NULL,
+  env = NULL
 )
 }
 \description{

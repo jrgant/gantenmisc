@@ -4,11 +4,11 @@
 \alias{expand_grid}
 \title{Convert output of expand.grid to data.table}
 \usage{
-expand_grid(...)
+expand_grid(..., sorted = TRUE, unique = FALSE)
 }
 \arguments{
 \item{...}{Pass arguments to \code{expand.grid()}}
 }
 \description{
-A wrapper around \code{expand.grid()} that outputs a \code{data.table} instead of a vanilla \code{data.frame}.
+An alias for data.table's \code{CJ()}, which is like \code{expand.grid()} but returns a \code{data.table}
 }

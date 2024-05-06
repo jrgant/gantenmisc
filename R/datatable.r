@@ -37,11 +37,11 @@ d  <- dt
 
 #' @title Convert output of expand.grid to data.table
 #'
-#' @description A wrapper around `expand.grid()` that outputs a `data.table` instead of a vanilla `data.frame`.
+#' @description An alias for data.table's `CJ()`, which is like `expand.grid()` but returns a `data.table`
 #'
 #' @param ... Pass arguments to `expand.grid()`
 #'
-#' @import data.table
+#' @importFrom data.table CJ
 #' @export expand_grid
 
-expand_grid <- function(...) as.data.table(expand.grid(...))
+expand_grid <- CJ
