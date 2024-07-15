@@ -12,7 +12,7 @@ Description: If I find myself writing the same function over and over in differe
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 URL: https://github.com/jrgant/gantenmisc
 BugReports: https://github.com/jrgant/gantenmisc/issues
 Imports:
