@@ -4,12 +4,14 @@
 \alias{getnames}
 \title{Retrieve column names}
 \usage{
-getnames(pat, data, ...)
+getnames(pat, data, negate = FALSE, ...)
 }
 \arguments{
 \item{pat}{A regular expression defining the pattern(s) used to retrieve column names.}
 
 \item{data}{A \code{data.frame} from which to retrieve the column names.}
+
+\item{negate}{Retrieve column names that DO NOT match the pattern. Logical.}
 
 \item{...}{Pass arguments to \code{grep()}}
 }

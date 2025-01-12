@@ -4,6 +4,7 @@
 #'
 #' @param pat A regular expression defining the pattern(s) used to retrieve column names.
 #' @param data A `data.frame` from which to retrieve the column names.
+#' @param negate Retrieve column names that DO NOT match the pattern. Logical.
 #' @param ... Pass arguments to `grep()`
 #'
 #' @return A vector of column names from the selected `data.frame`, each matching the pattern specified in `pat`.
@@ -11,8 +12,8 @@
 #' @import data.table
 #' @export getnames
 
-getnames <- function(pat, data, ...) {
-  grep(pat, names(data), perl = TRUE, value = TRUE, ...)
+getnames <- function(pat, data, negate = FALSE, ...) {
+  grep(pat, names(data), perl = TRUE, value = TRUE, invert = negate, ...)
 }
 
 
