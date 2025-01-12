@@ -12,8 +12,7 @@
 #' @export getnames
 
 getnames <- function(pat, data, ...) {
-  nvec <- names(data)
-  nvec[grep(pat, nvec, perl = TRUE, ...)]
+  grep(pat, names(data), perl = TRUE, value = TRUE, ...)
 }
 
 
