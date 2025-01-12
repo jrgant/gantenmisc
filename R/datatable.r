@@ -27,12 +27,8 @@ getnames <- function(pat, data, ...) {
 #' https://github.com/Rdatatable/data.table/issues/4872
 #'
 #' @import data.table
-#' @export dt
-dt <- data.table:::"[.data.table"
-
-#' @describeIn dt d
 #' @export d
-d  <- dt
+d <- data.table:::"[.data.table"
 
 
 #' @title Convert output of expand.grid to data.table
